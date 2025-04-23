@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+html, body {
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header img.company-logo {
+  transition: all 0.5s ease-in-out;
+  width: 25rem;
+}
+
+header div.menu-list {
+  padding: 3rem;
+}
+
+header div.menu-list ul{
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+header div.menu-list ul li {
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+header div.menu-list ul li a{
+  text-decoration: none;
+  color: #000;
+}
+
+@media (max-width: 1500px) {
+  header img.company-logo {
+    width: 23rem;
+  }
+}
+@media (max-width: 1000px) {
+  header img.company-logo {
+    width: 20rem;
+  }
+
+  header div.menu-list ul li a{
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 700px) {
+  header img.company-logo {
+    width: 15rem;
+  }
+}
