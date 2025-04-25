@@ -98,7 +98,7 @@ main {
   padding: 0 5rem;
 }
 
-.second-section p.section-title {
+p.section-title {
   font-size: 1.5rem;
   /* width: 100%;
   text-align: start; */
@@ -206,6 +206,27 @@ main {
   font-weight: 500;
 }
 
+.forth-section .flex-container {
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.forth-section .flex-container > div {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.forth-section .flex-container > div p {
+  line-height: 2rem;
+  max-width: 356px;
+}
+
 @media only screen and (max-width: 500px) {
   header img.company-logo {
     margin-top: 5%;
@@ -274,34 +295,6 @@ main {
     background-size:100%;
     padding-left: 0%;
   }
-
-  /* .third-section div.company-call-now {
-  }
-
-  .third-section div.company-call-now h1 {
-    font-size: 2rem;
-  }
-  
-  .third-section div.company-call-now h3 {
-    text-shadow: 1px 1px 2px gray;
-  }
-  
-  .third-section div.company-call-now button {
-    padding: 1rem 2rem;
-    font-size: small;
-  } */
-
-  /* .third-section div.company-realtor {
-    color: black;
-    width: auto;
-    text-align: center;
-    padding: 1rem;
-  }
-  
-  .third-section div.company-realtor img {
-    height: 15rem;
-    width: 15rem;
-  } */
   
   .third-section div.company-realtor h2{
     color: white;
@@ -349,37 +342,6 @@ main {
   .third-section div.company-call-now h1 {
     margin: 0;
   }
-  
-  /* .third-section div.company-call-now h3 {
-    text-shadow: 1px 1px 2px gray;
-  }
-  
-  .third-section div.company-call-now button {
-    padding: 1rem 2rem;
-    font-size: small;
-  }
-
-  .third-section div.company-call-now h3 {
-    font-size: 0.9rem;
-  }
-
-  .third-section div.company-realtor img {
-    height: 8rem;
-    width: 8rem;
-  }
-
-  .third-section div.company-realtor h2{
-    text-shadow: 1px 1px 2px gray;
-    color: white;
-    font-size: 1rem;
-  }
-  
-  .third-section div.company-realtor h3 {
-    text-shadow: 1px 1px 2px gray;
-    color: white;
-    font-weight: 500;
-    font-size: 0.5rem;
-  } */
 
   .open-menu{
     display: block;
