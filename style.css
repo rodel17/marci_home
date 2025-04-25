@@ -10,10 +10,10 @@ html, body {
 header {
   width: 100%;
   height: 8rem;
-  /* padding: 0 1rem; */
   background-color: white;
-  border-bottom: 1px solid rgb(238, 238, 238);
+  /* border-bottom: 1px solid rgb(238, 238, 238); */
   position: fixed;
+  z-index: 2;
 }
 
 header figure {
@@ -82,7 +82,8 @@ header img.company-logo {
 
 /* Content */
 main {
-  height: 100vh;
+  /* height: 100vh; */
+  height: 100%;
   padding: 0 20rem;
   padding-top: 7.1rem;
   transition: 1s ease;
@@ -97,8 +98,10 @@ main {
   padding: 0 5rem;
 }
 
-.second-section p.second-section-title {
+.second-section p.section-title {
   font-size: 1.5rem;
+  /* width: 100%;
+  text-align: start; */
 }
 
 .grid-wrapper{
@@ -135,6 +138,72 @@ main {
 
 .grid-wrapper p {
   line-height: 2rem;
+}
+
+.third-section {
+  height: 40rem;
+  background-image: url('./assets/images/home_view_outside_4.png');
+  background-attachment: fixed;
+  background-position: left;
+  position: relative;
+  z-index: 0;
+  background-size: 72%;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20%;
+}
+
+.third-section div.company-call-now {
+  /* border: 1px solid red; */
+  color: white;
+  width: auto;
+  text-align: center;
+  padding: 1rem;
+}
+
+.third-section div.company-call-now h3 {
+  text-shadow: 1px 1px 2px gray;
+}
+.third-section div.company-call-now h1 {
+  text-shadow: 1px 1px 2px gray;
+  font-weight: 300;
+  font-size: 3.6rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.third-section div.company-call-now button {
+  padding: 1.2rem 3rem;
+  font-size: large;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 50px;
+  font-weight: bolder;
+}
+
+.third-section div.company-realtor {
+  /* border: 1px solid blue; */
+  color: black;
+  width: auto;
+  text-align: center;
+  padding: 1rem;
+}
+
+.third-section div.company-realtor img {
+  height: 20rem;
+  width: 20rem;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.third-section div.company-realtor h2{
+  font-weight: 200;
+  font-style: italic;
+}
+
+.third-section div.company-realtor h3 {
+  font-weight: 500;
 }
 
 @media only screen and (max-width: 500px) {
@@ -177,12 +246,44 @@ main {
   }
   
   .grid-wrapper.reverse > div:nth-child(1) { order: 3; }
-  .grid-wrapper.reverse > div:nth-child(2) { order: 2; }
+  .grid-wrapper.reverse > div:nth-child(2) { order: 3; }
   .grid-wrapper.reverse > div:nth-child(3) { order: 1; }
+
+  .second-section {
+    padding: 0 2rem;
+  }
 
   .grid-wrapper h1 {
     width: 100%;
+    font-size: 1.5rem;
     margin-bottom: 0;
+  }
+
+  .second-section p.section-title {
+    margin-bottom: 0;
+    /* width: 100%;
+    text-align: start; */
+  }
+
+  .grid-wrapper p {
+    margin-top: 0;
+  }
+
+  .third-section {
+    /* flex-direction: column; */
+    /* height: 40rem; */
+    background-attachment: local;
+    flex-direction: column;
+    background-size: 100%;
+    /* background-position: left;
+    position: relative;
+    z-index: 0;
+    background-size: 72%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20%; */
   }
 }
 @media only screen and (max-width: 100px)  {
