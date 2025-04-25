@@ -270,20 +270,9 @@ main {
   }
 
   .third-section {
-    /* flex-direction: column; */
-    /* height: 40rem; */
-    background-attachment: local;
-    /* flex-direction: column; */
-    background-size: 100%;
-    /* background-position: left;
-    position: relative;
-    z-index: 0;
-    background-size: 72%;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 20%; */
+    background-attachment:inherit;
+    background-size:100%;
+    padding-left: 0%;
   }
 
   /* .third-section div.company-call-now {
@@ -332,27 +321,42 @@ main {
   }
 }
 
+@media only screen and (max-width: 1030px) {
+  .third-section div.company-call-now h1 {
+    font-size: 3rem;
+  }
+
+  .third-section div.company-call-now h3 {
+    font-size: 0.9rem;
+  }
+
+  .third-section div.company-realtor img {
+    height: 13rem;
+    width: 13rem;
+  }
+}
+
 @media only screen and (max-width: 900px) {
 
-  /* .third-section div.company-call-now {
+  .third-section {
+    justify-content:center;
+    flex-direction: column;
+    background-size:auto;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 
   .third-section div.company-call-now h1 {
-    font-size: 2rem;
+    margin: 0;
   }
   
-  .third-section div.company-call-now h3 {
+  /* .third-section div.company-call-now h3 {
     text-shadow: 1px 1px 2px gray;
   }
   
   .third-section div.company-call-now button {
     padding: 1rem 2rem;
     font-size: small;
-  } */
-
-  .third-section {
-    justify-content:center;
-    /* padding: 1rem; */
   }
 
   .third-section div.company-call-now h3 {
@@ -375,7 +379,7 @@ main {
     color: white;
     font-weight: 500;
     font-size: 0.5rem;
-  }
+  } */
 
   .open-menu{
     display: block;
